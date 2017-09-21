@@ -1489,6 +1489,7 @@ namespace Sum.Animation
             faCe.FillEllipse(paintBrush, 380, 250, 80, 80);
             Thread.Sleep(500);
 
+            //Finishing up "putting on foundation"
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
             paintBrush = new SolidBrush(Color.Chocolate);
