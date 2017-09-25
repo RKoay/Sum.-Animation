@@ -68,5 +68,14 @@ namespace Sum.Animation.Properties {
                 return ResourceManager.GetStream("baby_music_box_daniel_simion", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream SMALL_CROWD_APPLAUSE_Yannick_Lemieux_1268806408 {
+            get {
+                return ResourceManager.GetStream("SMALL_CROWD_APPLAUSE_Yannick_Lemieux_1268806408", resourceCulture);
+            }
+        }
     }
 }

@@ -21,23 +21,29 @@ namespace Sum.Animation
 
         private void Form1_Click(object sender, EventArgs e)
         {
+            introO.Dispose();
+            this.Refresh();
+
+            // “Face” By Rie Koay on September 27 2017
+
             SoundPlayer player = new SoundPlayer(Properties.Resources.baby_music_box_daniel_simion);
             player.Play();
 
-
             Graphics faCe = this.CreateGraphics();
+            faCe.Clear(Color.Salmon);
             Font drawFont = new Font("Lobster", 20);
+            Pen drawPencil = new Pen(Color.White, 10);
             SolidBrush paintBrush = new SolidBrush(Color.White);
-            faCe.DrawString("'Face' by Rie Koay", drawFont, paintBrush, 100, 150);
-            Thread.Sleep(2000);
 
-            faCe.TranslateTransform(100, 150);
-            faCe.RotateTransform(180);
+
+            faCe.Clear(Color.Salmon);
+            faCe.TranslateTransform(250, 100);
+            faCe.RotateTransform(90);
             faCe.DrawString("'Face' by Rie Koay", drawFont, paintBrush, new Rectangle());
             faCe.ResetTransform();
-            Thread.Sleep(250);
+            Thread.Sleep(500);
 
-            Pen drawPencil = new Pen(Color.Chocolate, 10);
+            drawPencil = new Pen(Color.Chocolate, 10);
             paintBrush = new SolidBrush(Color.Chocolate);
             faCe.Clear(Color.White);
             faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
@@ -264,7 +270,7 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 150, 150, 30, 30);
             faCe.FillEllipse(paintBrush, 120, 180, 30, 30);
             faCe.FillEllipse(paintBrush, 150, 150, 30, 30);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -311,7 +317,7 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 200, 200, 30, 30);
             faCe.FillEllipse(paintBrush, 120, 180, 50, 50);
             faCe.FillEllipse(paintBrush, 200, 200, 30, 30);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -358,7 +364,7 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 250, 150, 30, 30);
             faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
             faCe.FillEllipse(paintBrush, 250, 150, 30, 30);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -405,7 +411,7 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
             faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
             faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -458,7 +464,7 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 300, 150, 20, 20);
             faCe.FillEllipse(paintBrush, 110, 150, 20, 20);
             faCe.FillEllipse(paintBrush, 300, 150, 20, 20);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -511,7 +517,7 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 320, 150, 30, 30);
             faCe.FillEllipse(paintBrush, 130, 150, 30, 30);
             faCe.FillEllipse(paintBrush, 320, 150, 30, 30);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -566,7 +572,7 @@ namespace Sum.Animation
             faCe.FillEllipse(paintBrush, 320, 150, 30, 30);
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 380, 200, 20, 30, 30, 300);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -621,7 +627,7 @@ namespace Sum.Animation
             faCe.FillEllipse(paintBrush, 320, 150, 30, 30);
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 330, 220, 20, 30, 30, 300);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -676,7 +682,7 @@ namespace Sum.Animation
             faCe.FillEllipse(paintBrush, 320, 150, 30, 30);
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -731,7 +737,7 @@ namespace Sum.Animation
             faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -787,7 +793,7 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             faCe.DrawArc(drawPencil, 200, 320, 50, 10, 120, 300);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -843,7 +849,7 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -899,7 +905,7 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -955,7 +961,7 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -1011,126 +1017,6 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            Thread.Sleep(1000);
-
-            faCe.Clear(Color.White);
-            drawPencil = new Pen(Color.Chocolate, 10);
-            paintBrush = new SolidBrush(Color.Chocolate);
-            faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
-            faCe.FillRectangle(paintBrush, 0, 0, 500, 80);
-            drawPencil = new Pen(Color.White, 2);
-            faCe.DrawLine(drawPencil, 20, 50, 20, 100);
-            faCe.DrawLine(drawPencil, 30, 80, 30, 100);
-            faCe.DrawLine(drawPencil, 40, 80, 40, 100);
-            faCe.DrawLine(drawPencil, 60, 60, 60, 100);
-            faCe.DrawLine(drawPencil, 70, 50, 70, 100);
-            faCe.DrawLine(drawPencil, 80, 70, 80, 100);
-            faCe.DrawLine(drawPencil, 100, 80, 100, 100);
-            faCe.DrawLine(drawPencil, 130, 60, 130, 100);
-            faCe.DrawLine(drawPencil, 140, 80, 140, 100);
-            faCe.DrawLine(drawPencil, 160, 50, 160, 100);
-            faCe.DrawLine(drawPencil, 170, 80, 170, 100);
-            faCe.DrawLine(drawPencil, 190, 90, 190, 100);
-            faCe.DrawLine(drawPencil, 210, 50, 210, 100);
-            faCe.DrawLine(drawPencil, 220, 50, 220, 100);
-            faCe.DrawLine(drawPencil, 240, 80, 240, 100);
-            faCe.DrawLine(drawPencil, 250, 80, 250, 100);
-            faCe.DrawLine(drawPencil, 260, 60, 260, 100);
-            faCe.DrawLine(drawPencil, 280, 50, 280, 100);
-            faCe.DrawLine(drawPencil, 290, 70, 290, 100);
-            faCe.DrawLine(drawPencil, 310, 80, 310, 100);
-            faCe.DrawLine(drawPencil, 320, 60, 320, 100);
-            faCe.DrawLine(drawPencil, 340, 80, 340, 100);
-            faCe.DrawLine(drawPencil, 350, 50, 350, 100);
-            faCe.DrawLine(drawPencil, 370, 80, 370, 100);
-            faCe.DrawLine(drawPencil, 380, 90, 380, 100);
-            faCe.DrawLine(drawPencil, 400, 50, 400, 100);
-            faCe.DrawLine(drawPencil, 410, 80, 410, 100);
-            faCe.DrawLine(drawPencil, 420, 80, 42, 100);
-            faCe.DrawLine(drawPencil, 440, 60, 440, 100);
-            faCe.DrawLine(drawPencil, 460, 50, 460, 100);
-            faCe.DrawLine(drawPencil, 470, 80, 470, 100);
-            faCe.DrawLine(drawPencil, 480, 80, 480, 100);
-            faCe.DrawLine(drawPencil, 500, 60, 500, 100);
-            drawPencil = new Pen(Color.LightBlue, 5);
-            paintBrush = new SolidBrush(Color.LightBlue);
-            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
-            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
-            faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
-            faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
-            drawPencil = new Pen(Color.White, 5);
-            paintBrush = new SolidBrush(Color.White);
-            faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
-            faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
-            faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
-            faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
-            drawPencil = new Pen(Color.Black, 3);
-            faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
-            faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            Thread.Sleep(1000);
-
-            faCe.Clear(Color.White);
-            drawPencil = new Pen(Color.Chocolate, 10);
-            paintBrush = new SolidBrush(Color.Chocolate);
-            faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
-            faCe.FillRectangle(paintBrush, 0, 0, 500, 80);
-            drawPencil = new Pen(Color.White, 2);
-            faCe.DrawLine(drawPencil, 20, 50, 20, 100);
-            faCe.DrawLine(drawPencil, 30, 80, 30, 100);
-            faCe.DrawLine(drawPencil, 40, 80, 40, 100);
-            faCe.DrawLine(drawPencil, 60, 60, 60, 100);
-            faCe.DrawLine(drawPencil, 70, 50, 70, 100);
-            faCe.DrawLine(drawPencil, 80, 70, 80, 100);
-            faCe.DrawLine(drawPencil, 100, 80, 100, 100);
-            faCe.DrawLine(drawPencil, 130, 60, 130, 100);
-            faCe.DrawLine(drawPencil, 140, 80, 140, 100);
-            faCe.DrawLine(drawPencil, 160, 50, 160, 100);
-            faCe.DrawLine(drawPencil, 170, 80, 170, 100);
-            faCe.DrawLine(drawPencil, 190, 90, 190, 100);
-            faCe.DrawLine(drawPencil, 210, 50, 210, 100);
-            faCe.DrawLine(drawPencil, 220, 50, 220, 100);
-            faCe.DrawLine(drawPencil, 240, 80, 240, 100);
-            faCe.DrawLine(drawPencil, 250, 80, 250, 100);
-            faCe.DrawLine(drawPencil, 260, 60, 260, 100);
-            faCe.DrawLine(drawPencil, 280, 50, 280, 100);
-            faCe.DrawLine(drawPencil, 290, 70, 290, 100);
-            faCe.DrawLine(drawPencil, 310, 80, 310, 100);
-            faCe.DrawLine(drawPencil, 320, 60, 320, 100);
-            faCe.DrawLine(drawPencil, 340, 80, 340, 100);
-            faCe.DrawLine(drawPencil, 350, 50, 350, 100);
-            faCe.DrawLine(drawPencil, 370, 80, 370, 100);
-            faCe.DrawLine(drawPencil, 380, 90, 380, 100);
-            faCe.DrawLine(drawPencil, 400, 50, 400, 100);
-            faCe.DrawLine(drawPencil, 410, 80, 410, 100);
-            faCe.DrawLine(drawPencil, 420, 80, 42, 100);
-            faCe.DrawLine(drawPencil, 440, 60, 440, 100);
-            faCe.DrawLine(drawPencil, 460, 50, 460, 100);
-            faCe.DrawLine(drawPencil, 470, 80, 470, 100);
-            faCe.DrawLine(drawPencil, 480, 80, 480, 100);
-            faCe.DrawLine(drawPencil, 500, 60, 500, 100);
-            drawPencil = new Pen(Color.LightBlue, 5);
-            paintBrush = new SolidBrush(Color.LightBlue);
-            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
-            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
-            faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
-            faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
-            drawPencil = new Pen(Color.White, 5);
-            paintBrush = new SolidBrush(Color.White);
-            faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
-            faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
-            faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
-            faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
-            drawPencil = new Pen(Color.Black, 3);
-            faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
-            faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            drawPencil = new Pen(Color.Black, 5);
-            paintBrush = new SolidBrush(Color.Yellow);
-            faCe.DrawEllipse(drawPencil, 20, 250, 80, 80);
-            faCe.FillEllipse(paintBrush, 20, 250, 80, 80);
-            drawFont = new Font("Impact", 12);
-            paintBrush = new SolidBrush(Color.BlueViolet);
-            faCe.DrawString("Put on foundation using", drawFont, paintBrush, 250, 200);
-            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 230);
             Thread.Sleep(500);
 
             faCe.Clear(Color.White);
@@ -1187,14 +1073,6 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Black, 3);
             faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
-            drawPencil = new Pen(Color.Black, 5);
-            paintBrush = new SolidBrush(Color.Yellow);
-            faCe.DrawEllipse(drawPencil, 45, 300, 80, 80);
-            faCe.FillEllipse(paintBrush, 45, 300, 80, 80);
-            drawFont = new Font("Impact", 12);
-            paintBrush = new SolidBrush(Color.BlueViolet);
-            faCe.DrawString("Put on foundation using", drawFont, paintBrush, 250, 200);
-            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 230);
             Thread.Sleep(500);
 
             faCe.Clear(Color.White);
@@ -1258,8 +1136,15 @@ namespace Sum.Animation
             drawFont = new Font("Impact", 12);
             paintBrush = new SolidBrush(Color.BlueViolet);
             faCe.DrawString("Put on foundation using", drawFont, paintBrush, 250, 200);
-            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 230);
-            Thread.Sleep(500);
+            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 220);
+            faCe.DrawString("The colour I am", drawFont, paintBrush, 250, 240);
+            faCe.DrawString("using is called China Doll", drawFont, paintBrush, 250, 260);
+            faCe.DrawString("Remember to pat", drawFont, paintBrush, 250, 280);
+            faCe.DrawString("the foundation down,", drawFont, paintBrush, 250, 300);
+            faCe.DrawString("not to rub it.", drawFont, paintBrush, 250, 320);
+            faCe.DrawString("Rubbing it on your face", drawFont, paintBrush, 250, 340);
+            faCe.DrawString("will damage your skin", drawFont, paintBrush, 250, 360);
+            Thread.Sleep(1000);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -1322,8 +1207,157 @@ namespace Sum.Animation
             drawFont = new Font("Impact", 12);
             paintBrush = new SolidBrush(Color.BlueViolet);
             faCe.DrawString("Put on foundation using", drawFont, paintBrush, 250, 200);
-            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 230);
-            Thread.Sleep(500);
+            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 220);
+            faCe.DrawString("The colour I am", drawFont, paintBrush, 250, 240);
+            faCe.DrawString("using is called China Doll", drawFont, paintBrush, 250, 260);
+            faCe.DrawString("Remember to pat", drawFont, paintBrush, 250, 280);
+            faCe.DrawString("the foundation down,", drawFont, paintBrush, 250, 300);
+            faCe.DrawString("not to rub it.", drawFont, paintBrush, 250, 320);
+            faCe.DrawString("Rubbing it on your face", drawFont, paintBrush, 250, 340);
+            faCe.DrawString("will damage your skin", drawFont, paintBrush, 250, 360);
+            Thread.Sleep(1000);
+
+            faCe.Clear(Color.White);
+            drawPencil = new Pen(Color.Chocolate, 10);
+            paintBrush = new SolidBrush(Color.Chocolate);
+            faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
+            faCe.FillRectangle(paintBrush, 0, 0, 500, 80);
+            drawPencil = new Pen(Color.White, 2);
+            faCe.DrawLine(drawPencil, 20, 50, 20, 100);
+            faCe.DrawLine(drawPencil, 30, 80, 30, 100);
+            faCe.DrawLine(drawPencil, 40, 80, 40, 100);
+            faCe.DrawLine(drawPencil, 60, 60, 60, 100);
+            faCe.DrawLine(drawPencil, 70, 50, 70, 100);
+            faCe.DrawLine(drawPencil, 80, 70, 80, 100);
+            faCe.DrawLine(drawPencil, 100, 80, 100, 100);
+            faCe.DrawLine(drawPencil, 130, 60, 130, 100);
+            faCe.DrawLine(drawPencil, 140, 80, 140, 100);
+            faCe.DrawLine(drawPencil, 160, 50, 160, 100);
+            faCe.DrawLine(drawPencil, 170, 80, 170, 100);
+            faCe.DrawLine(drawPencil, 190, 90, 190, 100);
+            faCe.DrawLine(drawPencil, 210, 50, 210, 100);
+            faCe.DrawLine(drawPencil, 220, 50, 220, 100);
+            faCe.DrawLine(drawPencil, 240, 80, 240, 100);
+            faCe.DrawLine(drawPencil, 250, 80, 250, 100);
+            faCe.DrawLine(drawPencil, 260, 60, 260, 100);
+            faCe.DrawLine(drawPencil, 280, 50, 280, 100);
+            faCe.DrawLine(drawPencil, 290, 70, 290, 100);
+            faCe.DrawLine(drawPencil, 310, 80, 310, 100);
+            faCe.DrawLine(drawPencil, 320, 60, 320, 100);
+            faCe.DrawLine(drawPencil, 340, 80, 340, 100);
+            faCe.DrawLine(drawPencil, 350, 50, 350, 100);
+            faCe.DrawLine(drawPencil, 370, 80, 370, 100);
+            faCe.DrawLine(drawPencil, 380, 90, 380, 100);
+            faCe.DrawLine(drawPencil, 400, 50, 400, 100);
+            faCe.DrawLine(drawPencil, 410, 80, 410, 100);
+            faCe.DrawLine(drawPencil, 420, 80, 42, 100);
+            faCe.DrawLine(drawPencil, 440, 60, 440, 100);
+            faCe.DrawLine(drawPencil, 460, 50, 460, 100);
+            faCe.DrawLine(drawPencil, 470, 80, 470, 100);
+            faCe.DrawLine(drawPencil, 480, 80, 480, 100);
+            faCe.DrawLine(drawPencil, 500, 60, 500, 100);
+            drawPencil = new Pen(Color.LightBlue, 5);
+            paintBrush = new SolidBrush(Color.LightBlue);
+            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
+            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
+            drawPencil = new Pen(Color.White, 5);
+            paintBrush = new SolidBrush(Color.White);
+            faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
+            faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
+            drawPencil = new Pen(Color.Black, 3);
+            faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
+            faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
+            drawPencil = new Pen(Color.Black, 5);
+            paintBrush = new SolidBrush(Color.Yellow);
+            faCe.DrawEllipse(drawPencil, 20, 250, 80, 80);
+            faCe.FillEllipse(paintBrush, 20, 250, 80, 80);
+            drawFont = new Font("Impact", 12);
+            paintBrush = new SolidBrush(Color.BlueViolet);
+            faCe.DrawString("Put on foundation using", drawFont, paintBrush, 250, 200);
+            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 220);
+            faCe.DrawString("The colour I am", drawFont, paintBrush, 250, 240);
+            faCe.DrawString("using is called China Doll", drawFont, paintBrush, 250, 260);
+            faCe.DrawString("Remember to pat", drawFont, paintBrush, 250, 280);
+            faCe.DrawString("the foundation down,", drawFont, paintBrush, 250, 300);
+            faCe.DrawString("not to rub it.", drawFont, paintBrush, 250, 320);
+            faCe.DrawString("Rubbing it on your face", drawFont, paintBrush, 250, 340);
+            faCe.DrawString("will damage your skin", drawFont, paintBrush, 250, 360);
+            Thread.Sleep(1000);
+
+            faCe.Clear(Color.White);
+            drawPencil = new Pen(Color.Chocolate, 10);
+            paintBrush = new SolidBrush(Color.Chocolate);
+            faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
+            faCe.FillRectangle(paintBrush, 0, 0, 500, 80);
+            drawPencil = new Pen(Color.White, 2);
+            faCe.DrawLine(drawPencil, 20, 50, 20, 100);
+            faCe.DrawLine(drawPencil, 30, 80, 30, 100);
+            faCe.DrawLine(drawPencil, 40, 80, 40, 100);
+            faCe.DrawLine(drawPencil, 60, 60, 60, 100);
+            faCe.DrawLine(drawPencil, 70, 50, 70, 100);
+            faCe.DrawLine(drawPencil, 80, 70, 80, 100);
+            faCe.DrawLine(drawPencil, 100, 80, 100, 100);
+            faCe.DrawLine(drawPencil, 130, 60, 130, 100);
+            faCe.DrawLine(drawPencil, 140, 80, 140, 100);
+            faCe.DrawLine(drawPencil, 160, 50, 160, 100);
+            faCe.DrawLine(drawPencil, 170, 80, 170, 100);
+            faCe.DrawLine(drawPencil, 190, 90, 190, 100);
+            faCe.DrawLine(drawPencil, 210, 50, 210, 100);
+            faCe.DrawLine(drawPencil, 220, 50, 220, 100);
+            faCe.DrawLine(drawPencil, 240, 80, 240, 100);
+            faCe.DrawLine(drawPencil, 250, 80, 250, 100);
+            faCe.DrawLine(drawPencil, 260, 60, 260, 100);
+            faCe.DrawLine(drawPencil, 280, 50, 280, 100);
+            faCe.DrawLine(drawPencil, 290, 70, 290, 100);
+            faCe.DrawLine(drawPencil, 310, 80, 310, 100);
+            faCe.DrawLine(drawPencil, 320, 60, 320, 100);
+            faCe.DrawLine(drawPencil, 340, 80, 340, 100);
+            faCe.DrawLine(drawPencil, 350, 50, 350, 100);
+            faCe.DrawLine(drawPencil, 370, 80, 370, 100);
+            faCe.DrawLine(drawPencil, 380, 90, 380, 100);
+            faCe.DrawLine(drawPencil, 400, 50, 400, 100);
+            faCe.DrawLine(drawPencil, 410, 80, 410, 100);
+            faCe.DrawLine(drawPencil, 420, 80, 42, 100);
+            faCe.DrawLine(drawPencil, 440, 60, 440, 100);
+            faCe.DrawLine(drawPencil, 460, 50, 460, 100);
+            faCe.DrawLine(drawPencil, 470, 80, 470, 100);
+            faCe.DrawLine(drawPencil, 480, 80, 480, 100);
+            faCe.DrawLine(drawPencil, 500, 60, 500, 100);
+            drawPencil = new Pen(Color.LightBlue, 5);
+            paintBrush = new SolidBrush(Color.LightBlue);
+            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
+            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
+            drawPencil = new Pen(Color.White, 5);
+            paintBrush = new SolidBrush(Color.White);
+            faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
+            faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
+            drawPencil = new Pen(Color.Black, 3);
+            faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
+            faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
+            drawPencil = new Pen(Color.Black, 5);
+            paintBrush = new SolidBrush(Color.Yellow);
+            faCe.DrawEllipse(drawPencil, 45, 300, 80, 80);
+            faCe.FillEllipse(paintBrush, 45, 300, 80, 80);
+            drawFont = new Font("Impact", 12);
+            paintBrush = new SolidBrush(Color.BlueViolet);
+            faCe.DrawString("Put on foundation using", drawFont, paintBrush, 250, 200);
+            faCe.DrawString("this beauty blender", drawFont, paintBrush, 250, 220);
+            faCe.DrawString("The colour I am", drawFont, paintBrush, 250, 240);
+            faCe.DrawString("using is called China Doll", drawFont, paintBrush, 250, 260);
+            faCe.DrawString("Remember to pat", drawFont, paintBrush, 250, 280);
+            faCe.DrawString("the foundation down,", drawFont, paintBrush, 250, 300);
+            faCe.DrawString("not to rub it.", drawFont, paintBrush, 250, 320);
+            faCe.DrawString("Rubbing it on your face", drawFont, paintBrush, 250, 340);
+            faCe.DrawString("will damage your skin", drawFont, paintBrush, 250, 360);
+            Thread.Sleep(1000);
 
             faCe.Clear(Color.White);
             drawPencil = new Pen(Color.Chocolate, 10);
@@ -1506,7 +1540,7 @@ namespace Sum.Animation
             Thread.Sleep(500);
 
             //Finishing up "putting on foundation"
-            faCe.Clear(Color.White);
+            faCe.Clear(Color.Beige);
             drawPencil = new Pen(Color.Chocolate, 10);
             paintBrush = new SolidBrush(Color.Chocolate);
             faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
@@ -1551,8 +1585,8 @@ namespace Sum.Animation
             faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
             faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
             faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
-            drawPencil = new Pen(Color.White, 5);
-            paintBrush = new SolidBrush(Color.White);
+            drawPencil = new Pen(Color.Beige, 5);
+            paintBrush = new SolidBrush(Color.Beige);
             faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
             faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
             faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
@@ -1735,9 +1769,12 @@ namespace Sum.Animation
 
             faCe.Clear(Color.Beige);
             faCe.DrawArc(drawPencil, 80, 150, 300, 30, 0, 180);
-            drawFont = new Font("Lobster", 16);
-            paintBrush = new SolidBrush(Color.MediumSeaGreen);
+            drawFont = new Font("Segoe Script", 14);
+            paintBrush = new SolidBrush(Color.SeaGreen);
             faCe.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
+            faCe.DrawString("The lipstick I am currently", drawFont, paintBrush, 30, 320);
+            faCe.DrawString("using is from CanMake", drawFont, paintBrush, 30, 340);
+            faCe.DrawString("in the colour ‘Pink Salmon’", drawFont, paintBrush, 30, 360);
             Thread.Sleep(1000);
 
             faCe.Clear(Color.Beige);
@@ -1746,9 +1783,15 @@ namespace Sum.Animation
             paintBrush = new SolidBrush(Color.Salmon);
             faCe.DrawRectangle(drawPencil, 50, 150, 130, 250);
             faCe.FillRectangle(paintBrush, 50, 150, 130, 250);
-            drawFont = new Font("Lobster", 16);
-            paintBrush = new SolidBrush(Color.MediumSeaGreen);
+            drawFont = new Font("Segoe Script", 14);
+            paintBrush = new SolidBrush(Color.SeaGreen);
             faCe.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
+            faCe.DrawString("The lipstick I am currently", drawFont, paintBrush, 30, 320);
+            faCe.DrawString("using is from CanMake", drawFont, paintBrush, 30, 340);
+            faCe.DrawString("in the colour ‘Pink Salmon’", drawFont, paintBrush, 30, 360);
+            drawFont = new Font("Poplar Std", 16);
+            paintBrush = new SolidBrush(Color.White);
+            faCe.DrawString("CanMake 101", drawFont, paintBrush, 60, 200);
             Thread.Sleep(500);
 
             faCe.Clear(Color.Beige);
@@ -1757,9 +1800,15 @@ namespace Sum.Animation
             paintBrush = new SolidBrush(Color.Salmon);
             faCe.DrawRectangle(drawPencil, 150, 150, 230, 250);
             faCe.FillRectangle(paintBrush, 150, 150, 230, 250);
-            drawFont = new Font("Lobster", 16);
-            paintBrush = new SolidBrush(Color.MediumSeaGreen);
+            drawFont = new Font("Segoe Script", 14);
+            paintBrush = new SolidBrush(Color.SeaGreen);
             faCe.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
+            faCe.DrawString("The lipstick I am currently", drawFont, paintBrush, 30, 320);
+            faCe.DrawString("using is from CanMake", drawFont, paintBrush, 30, 340);
+            faCe.DrawString("in the colour ‘Pink Salmon’", drawFont, paintBrush, 30, 360);
+            drawFont = new Font("Poplar Std", 16);
+            paintBrush = new SolidBrush(Color.White);
+            faCe.DrawString("CanMake 101", drawFont, paintBrush, 160, 200);
             Thread.Sleep(500);
 
             faCe.Clear(Color.Beige);
@@ -1768,9 +1817,15 @@ namespace Sum.Animation
             paintBrush = new SolidBrush(Color.Salmon);
             faCe.DrawRectangle(drawPencil, 50, 150, 130, 250);
             faCe.FillRectangle(paintBrush, 50, 150, 130, 250);
-            drawFont = new Font("Lobster", 16);
-            paintBrush = new SolidBrush(Color.MediumSeaGreen);
+            drawFont = new Font("Segoe Script", 14);
+            paintBrush = new SolidBrush(Color.SeaGreen);
             faCe.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
+            faCe.DrawString("The lipstick I am currently", drawFont, paintBrush, 30, 320);
+            faCe.DrawString("using is from CanMake", drawFont, paintBrush, 30, 340);
+            faCe.DrawString("in the colour ‘Pink Salmon’", drawFont, paintBrush, 30, 360);
+            drawFont = new Font("Poplar Std", 16);
+            paintBrush = new SolidBrush(Color.White);
+            faCe.DrawString("CanMake 101", drawFont, paintBrush, 60, 200);
             Thread.Sleep(500);
 
             faCe.Clear(Color.Beige);
@@ -1779,17 +1834,26 @@ namespace Sum.Animation
             paintBrush = new SolidBrush(Color.Salmon);
             faCe.DrawRectangle(drawPencil, 150, 150, 230, 250);
             faCe.FillRectangle(paintBrush, 150, 150, 230, 250);
-            drawFont = new Font("Lobster", 16);
-            paintBrush = new SolidBrush(Color.MediumSeaGreen);
+            drawFont = new Font("Segoe Script", 14);
+            paintBrush = new SolidBrush(Color.SeaGreen);
             faCe.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
+            faCe.DrawString("The lipstick I am currently", drawFont, paintBrush, 30, 320);
+            faCe.DrawString("using is from CanMake", drawFont, paintBrush, 30, 340);
+            faCe.DrawString("in the colour ‘Pink Salmon’", drawFont, paintBrush, 30, 360);
+            drawFont = new Font("Poplar Std", 16);
+            paintBrush = new SolidBrush(Color.White);
+            faCe.DrawString("CanMake 101", drawFont, paintBrush, 160, 200);
             Thread.Sleep(500);
 
             faCe.Clear(Color.Beige);
             drawPencil = new Pen(Color.Salmon, 20);
             faCe.DrawArc(drawPencil, 50, 150, 300, 30, 0, 180);
-            drawFont = new Font("Lobster", 16);
-            paintBrush = new SolidBrush(Color.MediumSeaGreen);
+            drawFont = new Font("Segoe Script", 14);
+            paintBrush = new SolidBrush(Color.SeaGreen);
             faCe.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
+            faCe.DrawString("The lipstick I am currently", drawFont, paintBrush, 30, 320);
+            faCe.DrawString("using is from CanMake", drawFont, paintBrush, 30, 340);
+            faCe.DrawString("in the colour ‘Pink Salmon’", drawFont, paintBrush, 30, 360);
             Thread.Sleep(500);
 
             faCe.Clear(Color.Beige);
@@ -1851,6 +1915,144 @@ namespace Sum.Animation
             drawPencil = new Pen(Color.Salmon, 5);
             faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
             Thread.Sleep(500);
+
+            faCe.Clear(Color.Beige);
+            drawPencil = new Pen(Color.Chocolate, 10);
+            paintBrush = new SolidBrush(Color.Chocolate);
+            faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
+            faCe.FillRectangle(paintBrush, 0, 0, 500, 80);
+            drawPencil = new Pen(Color.Beige, 2);
+            faCe.DrawLine(drawPencil, 20, 50, 20, 100);
+            faCe.DrawLine(drawPencil, 30, 80, 30, 100);
+            faCe.DrawLine(drawPencil, 40, 80, 40, 100);
+            faCe.DrawLine(drawPencil, 60, 60, 60, 100);
+            faCe.DrawLine(drawPencil, 70, 50, 70, 100);
+            faCe.DrawLine(drawPencil, 80, 70, 80, 100);
+            faCe.DrawLine(drawPencil, 100, 80, 100, 100);
+            faCe.DrawLine(drawPencil, 130, 60, 130, 100);
+            faCe.DrawLine(drawPencil, 140, 80, 140, 100);
+            faCe.DrawLine(drawPencil, 160, 50, 160, 100);
+            faCe.DrawLine(drawPencil, 170, 80, 170, 100);
+            faCe.DrawLine(drawPencil, 190, 90, 190, 100);
+            faCe.DrawLine(drawPencil, 210, 50, 210, 100);
+            faCe.DrawLine(drawPencil, 220, 50, 220, 100);
+            faCe.DrawLine(drawPencil, 240, 80, 240, 100);
+            faCe.DrawLine(drawPencil, 250, 80, 250, 100);
+            faCe.DrawLine(drawPencil, 260, 60, 260, 100);
+            faCe.DrawLine(drawPencil, 280, 50, 280, 100);
+            faCe.DrawLine(drawPencil, 290, 70, 290, 100);
+            faCe.DrawLine(drawPencil, 310, 80, 310, 100);
+            faCe.DrawLine(drawPencil, 320, 60, 320, 100);
+            faCe.DrawLine(drawPencil, 340, 80, 340, 100);
+            faCe.DrawLine(drawPencil, 350, 50, 350, 100);
+            faCe.DrawLine(drawPencil, 370, 80, 370, 100);
+            faCe.DrawLine(drawPencil, 380, 90, 380, 100);
+            faCe.DrawLine(drawPencil, 400, 50, 400, 100);
+            faCe.DrawLine(drawPencil, 410, 80, 410, 100);
+            faCe.DrawLine(drawPencil, 420, 80, 42, 100);
+            faCe.DrawLine(drawPencil, 440, 60, 440, 100);
+            faCe.DrawLine(drawPencil, 460, 50, 460, 100);
+            faCe.DrawLine(drawPencil, 470, 80, 470, 100);
+            faCe.DrawLine(drawPencil, 480, 80, 480, 100);
+            faCe.DrawLine(drawPencil, 500, 60, 500, 100);
+            drawPencil = new Pen(Color.DarkBlue, 5);
+            paintBrush = new SolidBrush(Color.Salmon);
+            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
+            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
+            drawPencil = new Pen(Color.Beige, 5);
+            paintBrush = new SolidBrush(Color.Beige);
+            faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
+            faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
+            drawPencil = new Pen(Color.Black, 3);
+            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
+            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
+            drawPencil = new Pen(Color.Black, 3);
+            faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
+            drawPencil = new Pen(Color.Salmon, 5);
+            faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
+            Thread.Sleep(500);
+
+            faCe.Clear(Color.Beige);
+            drawPencil = new Pen(Color.Chocolate, 10);
+            paintBrush = new SolidBrush(Color.Chocolate);
+            faCe.DrawRectangle(drawPencil, 0, 0, 500, 80);
+            faCe.FillRectangle(paintBrush, 0, 0, 500, 80);
+            drawPencil = new Pen(Color.Beige, 2);
+            faCe.DrawLine(drawPencil, 20, 50, 20, 100);
+            faCe.DrawLine(drawPencil, 30, 80, 30, 100);
+            faCe.DrawLine(drawPencil, 40, 80, 40, 100);
+            faCe.DrawLine(drawPencil, 60, 60, 60, 100);
+            faCe.DrawLine(drawPencil, 70, 50, 70, 100);
+            faCe.DrawLine(drawPencil, 80, 70, 80, 100);
+            faCe.DrawLine(drawPencil, 100, 80, 100, 100);
+            faCe.DrawLine(drawPencil, 130, 60, 130, 100);
+            faCe.DrawLine(drawPencil, 140, 80, 140, 100);
+            faCe.DrawLine(drawPencil, 160, 50, 160, 100);
+            faCe.DrawLine(drawPencil, 170, 80, 170, 100);
+            faCe.DrawLine(drawPencil, 190, 90, 190, 100);
+            faCe.DrawLine(drawPencil, 210, 50, 210, 100);
+            faCe.DrawLine(drawPencil, 220, 50, 220, 100);
+            faCe.DrawLine(drawPencil, 240, 80, 240, 100);
+            faCe.DrawLine(drawPencil, 250, 80, 250, 100);
+            faCe.DrawLine(drawPencil, 260, 60, 260, 100);
+            faCe.DrawLine(drawPencil, 280, 50, 280, 100);
+            faCe.DrawLine(drawPencil, 290, 70, 290, 100);
+            faCe.DrawLine(drawPencil, 310, 80, 310, 100);
+            faCe.DrawLine(drawPencil, 320, 60, 320, 100);
+            faCe.DrawLine(drawPencil, 340, 80, 340, 100);
+            faCe.DrawLine(drawPencil, 350, 50, 350, 100);
+            faCe.DrawLine(drawPencil, 370, 80, 370, 100);
+            faCe.DrawLine(drawPencil, 380, 90, 380, 100);
+            faCe.DrawLine(drawPencil, 400, 50, 400, 100);
+            faCe.DrawLine(drawPencil, 410, 80, 410, 100);
+            faCe.DrawLine(drawPencil, 420, 80, 42, 100);
+            faCe.DrawLine(drawPencil, 440, 60, 440, 100);
+            faCe.DrawLine(drawPencil, 460, 50, 460, 100);
+            faCe.DrawLine(drawPencil, 470, 80, 470, 100);
+            faCe.DrawLine(drawPencil, 480, 80, 480, 100);
+            faCe.DrawLine(drawPencil, 500, 60, 500, 100);
+            drawPencil = new Pen(Color.DarkBlue, 5);
+            paintBrush = new SolidBrush(Color.CornflowerBlue);
+            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
+            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 110, 150, 50, 50);
+            faCe.FillEllipse(paintBrush, 300, 150, 50, 50);
+            drawPencil = new Pen(Color.Beige, 5);
+            paintBrush = new SolidBrush(Color.Beige);
+            faCe.DrawEllipse(drawPencil, 130, 180, 30, 30);
+            faCe.DrawEllipse(drawPencil, 320, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 130, 180, 30, 30);
+            faCe.FillEllipse(paintBrush, 320, 180, 30, 30);
+            drawPencil = new Pen(Color.Black, 3);
+            faCe.DrawEllipse(drawPencil, 110, 150, 50, 50);
+            faCe.DrawEllipse(drawPencil, 300, 150, 50, 50);
+            drawPencil = new Pen(Color.Black, 3);
+            faCe.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
+            drawPencil = new Pen(Color.Salmon, 5);
+            faCe.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
+            Thread.Sleep(1000);
+
+            player = new SoundPlayer(Properties.Resources.SMALL_CROWD_APPLAUSE_Yannick_Lemieux_1268806408);
+            player.Play();
+
+
+        }
+
+        private void label_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void introTh_Click(object sender, EventArgs e)
+        {
+
+
+
+
 
 
         }

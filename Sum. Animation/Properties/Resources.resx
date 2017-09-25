@@ -121,4 +121,7 @@
   <data name="baby_music_box_daniel_simion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baby-music-box_daniel-simion.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SMALL_CROWD_APPLAUSE_Yannick_Lemieux_1268806408" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SMALL_CROWD_APPLAUSE-Yannick_Lemieux-1268806408.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

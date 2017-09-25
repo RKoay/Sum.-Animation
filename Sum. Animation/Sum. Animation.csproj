@@ -82,5 +82,8 @@
   <ItemGroup>
     <None Include="Resources\baby-music-box_daniel-simion.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMALL_CROWD_APPLAUSE-Yannick_Lemieux-1268806408.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
