@@ -72,6 +72,15 @@ namespace Sum.Animation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Shampoo_Hair_SoundBible_com_11966726 {
+            get {
+                return ResourceManager.GetStream("Shampoo_Hair_SoundBible_com_11966726", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream SMALL_CROWD_APPLAUSE_Yannick_Lemieux_1268806408 {
             get {
                 return ResourceManager.GetStream("SMALL_CROWD_APPLAUSE_Yannick_Lemieux_1268806408", resourceCulture);

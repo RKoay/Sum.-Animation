@@ -32,6 +32,14 @@
             this.introO = new System.Windows.Forms.Label();
             this.introT = new System.Windows.Forms.Label();
             this.introTh = new System.Windows.Forms.Label();
+            this.introFi = new System.Windows.Forms.Label();
+            this.introF = new System.Windows.Forms.Label();
+            this.introS = new System.Windows.Forms.Label();
+            this.introEl = new System.Windows.Forms.Label();
+            this.introN = new System.Windows.Forms.Label();
+            this.introTe = new System.Windows.Forms.Label();
+            this.introSe = new System.Windows.Forms.Label();
+            this.introEi = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // introO
@@ -65,7 +73,86 @@
             this.introTh.Size = new System.Drawing.Size(37, 13);
             this.introTh.TabIndex = 2;
             this.introTh.Text = "          ";
-            this.introTh.Click += new System.EventHandler(this.introTh_Click);
+            // 
+            // introFi
+            // 
+            this.introFi.AutoSize = true;
+            this.introFi.BackColor = System.Drawing.Color.White;
+            this.introFi.Location = new System.Drawing.Point(60, 205);
+            this.introFi.Name = "introFi";
+            this.introFi.Size = new System.Drawing.Size(37, 13);
+            this.introFi.TabIndex = 3;
+            this.introFi.Text = "          ";
+            // 
+            // introF
+            // 
+            this.introF.AutoSize = true;
+            this.introF.BackColor = System.Drawing.Color.White;
+            this.introF.Location = new System.Drawing.Point(60, 218);
+            this.introF.Name = "introF";
+            this.introF.Size = new System.Drawing.Size(37, 13);
+            this.introF.TabIndex = 4;
+            this.introF.Text = "          ";
+            // 
+            // introS
+            // 
+            this.introS.AutoSize = true;
+            this.introS.BackColor = System.Drawing.Color.White;
+            this.introS.Location = new System.Drawing.Point(60, 231);
+            this.introS.Name = "introS";
+            this.introS.Size = new System.Drawing.Size(37, 13);
+            this.introS.TabIndex = 5;
+            this.introS.Text = "          ";
+            // 
+            // introEl
+            // 
+            this.introEl.AutoSize = true;
+            this.introEl.BackColor = System.Drawing.Color.Black;
+            this.introEl.Location = new System.Drawing.Point(60, 178);
+            this.introEl.Name = "introEl";
+            this.introEl.Size = new System.Drawing.Size(37, 13);
+            this.introEl.TabIndex = 6;
+            this.introEl.Text = "          ";
+            // 
+            // introN
+            // 
+            this.introN.AutoSize = true;
+            this.introN.BackColor = System.Drawing.Color.White;
+            this.introN.Location = new System.Drawing.Point(1, 0);
+            this.introN.Name = "introN";
+            this.introN.Size = new System.Drawing.Size(37, 13);
+            this.introN.TabIndex = 7;
+            this.introN.Text = "          ";
+            // 
+            // introTe
+            // 
+            this.introTe.AutoSize = true;
+            this.introTe.BackColor = System.Drawing.Color.White;
+            this.introTe.Location = new System.Drawing.Point(382, 0);
+            this.introTe.Name = "introTe";
+            this.introTe.Size = new System.Drawing.Size(37, 13);
+            this.introTe.TabIndex = 8;
+            this.introTe.Text = "          ";
+            // 
+            // introSe
+            // 
+            this.introSe.AutoSize = true;
+            this.introSe.BackColor = System.Drawing.Color.White;
+            this.introSe.Location = new System.Drawing.Point(1, 372);
+            this.introSe.Name = "introSe";
+            this.introSe.Size = new System.Drawing.Size(37, 13);
+            this.introSe.TabIndex = 9;
+            this.introSe.Text = "          ";
+            // 
+            // introEi
+            // 
+            this.introEi.AutoSize = true;
+            this.introEi.BackColor = System.Drawing.Color.White;
+            this.introEi.Location = new System.Drawing.Point(382, 372);
+            this.introEi.Name = "introEi";
+            this.introEi.Size = new System.Drawing.Size(37, 13);
+            this.introEi.TabIndex = 10;
+            this.introEi.Text = "          ";
             // 
             // Face
             // 
@@ -73,6 +160,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(419, 383);
+            this.Controls.Add(this.introEi);
+            this.Controls.Add(this.introSe);
+            this.Controls.Add(this.introTe);
+            this.Controls.Add(this.introN);
+            this.Controls.Add(this.introEl);
+            this.Controls.Add(this.introS);
+            this.Controls.Add(this.introF);
+            this.Controls.Add(this.introFi);
             this.Controls.Add(this.introTh);
             this.Controls.Add(this.introT);
             this.Controls.Add(this.introO);
@@ -89,6 +184,14 @@
         private System.Windows.Forms.Label introO;
         private System.Windows.Forms.Label introT;
         private System.Windows.Forms.Label introTh;
+        private System.Windows.Forms.Label introFi;
+        private System.Windows.Forms.Label introF;
+        private System.Windows.Forms.Label introS;
+        private System.Windows.Forms.Label introEl;
+        private System.Windows.Forms.Label introN;
+        private System.Windows.Forms.Label introTe;
+        private System.Windows.Forms.Label introSe;
+        private System.Windows.Forms.Label introEi;
     }
 }
 
