@@ -2063,9 +2063,5 @@ namespace Sum.Animation
             Thread.Sleep(1000);
         }
 
-        private void label_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
