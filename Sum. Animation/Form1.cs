@@ -1814,8 +1814,8 @@ namespace Sum.Animation
             face.DrawArc(drawPencil, 50, 150, 300, 30, 0, 180);
             drawPencil = new Pen(Color.Black, 12);
             paintBrush = new SolidBrush(Color.Salmon);
-            face.DrawRectangle(drawPencil, 150, 150, 230, 250);
-            face.FillRectangle(paintBrush, 150, 150, 230, 250);
+            face.DrawRectangle(drawPencil, 150, 150, 180, 250);
+            face.FillRectangle(paintBrush, 150, 150, 180, 250);
             drawFont = new Font("Segoe Script", 14, FontStyle.Bold);
             paintBrush = new SolidBrush(Color.SeaGreen);
             face.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
@@ -1848,8 +1848,8 @@ namespace Sum.Animation
             face.DrawArc(drawPencil, 50, 150, 300, 30, 0, 180);
             drawPencil = new Pen(Color.Black, 12);
             paintBrush = new SolidBrush(Color.Salmon);
-            face.DrawRectangle(drawPencil, 150, 150, 230, 250);
-            face.FillRectangle(paintBrush, 150, 150, 230, 250);
+            face.DrawRectangle(drawPencil, 150, 150, 180, 250);
+            face.FillRectangle(paintBrush, 150, 150, 180, 250);
             drawFont = new Font("Segoe Script", 14, FontStyle.Bold);
             paintBrush = new SolidBrush(Color.SeaGreen);
             face.DrawString("Put on some lipstick", drawFont, paintBrush, 30, 300);
