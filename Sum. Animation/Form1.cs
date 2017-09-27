@@ -1,5 +1,5 @@
 ﻿// “Face Animation” By Rie Koay on September 27 2017
-//This program demonstrates the use of circles and arcs with other shapes and sounds
+//This program demonstrates the many uses of circles and arcs with other shapes and sounds
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -2060,7 +2060,12 @@ namespace Sum.Animation
             face.DrawArc(drawPencil, 220, 250, 20, 30, 30, 180);
             drawPencil = new Pen(Color.Salmon, 5);
             face.DrawArc(drawPencil, 200, 320, 80, 10, 0, 180);
+            drawFont = new Font("Papyrus", 14, FontStyle.Bold);
+            paintBrush = new SolidBrush(Color.Black);
+            face.DrawString("The End", drawFont, paintBrush, 10, 150);
             Thread.Sleep(1000);
+
+            //The End
         }
 
     }
